@@ -1,0 +1,8 @@
+
+1. Select f.CLIENTE, sum(d.VALOR) 
+from  Factura f , DetalleFactura d
+where f.id = d.FACTURA_ID
+group by f.CLIENTE
+
+7.Select sum(d.VALOR) 
+from DetalleFactura d
